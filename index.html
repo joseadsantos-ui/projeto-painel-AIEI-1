@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de comando industrial</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/dispositivos.css">
+</head>
+<body>
+<h1>Painel de comando industrial</h1>
+<div class="bar">
+  <button class="ctl" id="conectar">Conectar Arduino</button>
+  <button class="ctl" id="desconectar" hidden>Desconectar</button>
+  <span id="modo">Simulação (sem Arduino)</span>
+</div>
+
+<div class="panel" id="painel"></div>
+<div class="lamps" id="lamps"></div>
+
+<div class="aviso">A parada de emergência deste painel é de supervisório. Ela não substitui o botão físico NF ligado ao circuito de segurança (NR-12 / ISO 13850).</div>
+<pre id="log" aria-live="polite"></pre>
+
+<!-- A ordem importa: cada arquivo só usa os que vêm antes dele -->
+<script src="js/barramento.js"></script>
+<script src="js/dispositivos.js"></script>
+<script src="js/estado.js"></script>
+<script src="js/interface.js"></script>
+<script src="js/serial.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

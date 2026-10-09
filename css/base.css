@@ -1,0 +1,12 @@
+/* Página, barra superior, aviso e log */
+:root{--bg:#1d2125;--pan:#c8cbcd;--pan2:#aeb2b5;--ink:#22262a;--vd:#1f9d55;--vm:#d71920;--am:#f2a900;--az:#2467c9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#e8eaec;font:15px/1.4 "Arial Narrow",Arial,sans-serif;padding:20px}
+h1{font-size:22px;margin:0 0 14px;font-weight:700;letter-spacing:.2px}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+button.ctl{background:#2f353b;color:#fff;border:1px solid #4a5159;padding:9px 14px;border-radius:4px;font:inherit;cursor:pointer}
+button.ctl:focus-visible{outline:3px solid var(--am);outline-offset:2px}
+#modo{padding:4px 10px;border-radius:3px;background:#3a4047;font-weight:700}
+#modo.hw{background:var(--vd)}
+pre{background:#14171a;border:1px solid #333a40;padding:10px;height:130px;overflow:auto;font:12px/1.4 ui-monospace,Consolas,monospace;margin:16px 0 0}
+.aviso{margin-top:14px;padding:10px 12px;border-left:5px solid var(--am);background:#2a2d31;max-width:760px}
